@@ -2,7 +2,7 @@
 
 A real-time mission dashboard for NASA's **Artemis II** — the first crewed lunar mission since Apollo 17 in 1972. Built with Python and Streamlit, pulling live data from JPL Horizons, NOAA SWPC, NASA SDO, and GOES-16 satellite imagery.
 
-> **by Rogue.tinker**
+> **by wmac131**
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square&logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red?style=flat-square&logo=streamlit)
@@ -13,8 +13,6 @@ A real-time mission dashboard for NASA's **Artemis II** — the first crewed lun
 ---
 
 ## 📸 Preview
-
-![ArtemisII_trqcker](https://github.com/user-attachments/assets/6f7680bc-2976-440b-a934-d29e8c223952)
 
 
 ```
@@ -30,39 +28,6 @@ Distance from Earth    Velocity         Altitude          Light Travel Time
 ☀️ Space Weather | 🌍 Live Views | 📡 Mission Updates
 ```
 
----
-
-## ⬇️ Download (No GitHub Account Required)
-
-### Option A — Download ZIP (easiest)
-Click the green **Code** button on this page → **Download ZIP**
-Then unzip and follow the [Quick Start](#-quick-start) steps below.
-
-### Option B — Direct file download with wget (Linux / macOS / WSL)
-```bash
-BASE=https://raw.githubusercontent.com/rogue07/ArtemisII_Tracker_by_Ram/main
-
-mkdir artemis-tracker && cd artemis-tracker
-wget $BASE/app.py
-wget $BASE/install.py
-```
-
-### Option C — Direct file download with curl
-```bash
-BASE=https://raw.githubusercontent.com/rogue07/ArtemisII_Tracker_by_Ram/main
-
-mkdir artemis-tracker && cd artemis-tracker
-curl -O $BASE/app.py
-curl -O $BASE/install.py
-```
-
-### Option D — Clone with git (no login needed for public repos)
-```bash
-git clone https://github.com/rogue07/ArtemisII_Tracker_by_Ram.git
-cd artemis-tracker
-```
-
-> **No login, no token, no account.** This repository is public. All download methods above work anonymously.
 
 ---
 
@@ -149,7 +114,7 @@ Three.js (`r128`) is loaded from Cloudflare CDN at runtime — no npm or Node.js
 ## 🏗️ Project Structure
 
 ```
-artemis-tracker/
+artemisII_tracker/
 ├── app.py              # Main Streamlit dashboard — run this
 ├── install.py          # One-time installer — creates venv and installs packages
 ├── artemis_venv/       # Auto-created virtual environment (gitignored)
@@ -226,30 +191,6 @@ Swap the Horizons target ID in `horizons_query("-1024")`. Other interesting IDs:
 | Christina Koch | Mission Specialist | NASA |
 | Jeremy Hansen | Mission Specialist | CSA (Canada) |
 
----
-
-## 📋 Publishing This Repo (Making It Public)
-
-When creating the repository on GitHub, make sure to select **Public** so anyone can download it without logging in:
-
-1. Go to [github.com/new](https://github.com/new)
-2. Name it `artemis-tracker`
-3. Select **Public** ← important
-4. Do **not** check "Add a README" (you already have one)
-5. Click **Create repository**
-6. Push your files:
-
-```bash
-cd artemis-tracker
-git init
-git add app.py install.py README.md .gitignore
-git commit -m "Initial commit — Artemis II live mission tracker"
-git branch -M main
-git remote add origin https://github.com/rogue07/artemis-tracker.git
-git push -u origin main
-```
-
-After pushing, anyone can download via ZIP or `wget`/`curl` using the commands in the [Download](#️-download-no-github-account-required) section above — no account needed.
 
 ---
 
@@ -271,4 +212,4 @@ Data from JPL, NOAA, and NASA is US Government public domain.
 
 ---
 
-*Built with ❤️ by Rogue.tinker · Launched April 1, 2026*
+*Built with ❤️ by wmac131 · Launched April 1, 2026*
