@@ -237,7 +237,7 @@ with c2:
     m,s     = divmod(rem,60)
     st.metric("Mission Elapsed Time", f"{h:03d}:{m:02d}:{s:02d}")
 with c3:
-    st.info("**by: Rogue.tinker**")
+    st.info("**by: wmac131**")
 
 if not fetch_ok:
     st.error(f"Horizons error: {fetch_err}")
